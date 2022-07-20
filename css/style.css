@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: grey;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.logo_svg {
+  display: block;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes hop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#down_middle {
+  -webkit-animation: hop 2s infinite both ease;
+          animation: hop 2s infinite both ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}/*# sourceMappingURL=style.css.map */
