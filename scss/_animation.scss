@@ -1,13 +1,6 @@
 @use 'colors';
 @use 'base';
 
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
-body {
-	background-color: colors.$grey;
-}
-
 .logo {
 	margin: 0 auto;
 }
