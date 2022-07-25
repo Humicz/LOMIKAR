@@ -2,3 +2,11 @@
 layout: layouts/main-layout.njk
 ---
 
+<!-- Inserting header from partials -->
+{% include 'partials/header.njk' %}
+
+<main>
+
+{{ content | safe }}
+    
+</main>

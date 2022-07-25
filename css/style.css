@@ -48,4 +48,8 @@ body {
           animation: hop 2s infinite both ease;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.header {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
