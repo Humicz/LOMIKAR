@@ -1,26 +1,3 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
-body {
-	background-color: grey;
-}
-
-.logo {
-	margin: 0 auto;
-}
-
-.logo_svg {
-	display: block;
-	margin: 0 auto;
-}
-
-@keyframes hop {
-	0% { transform: translateY(0); }
-	50% { transform: translateY(25px); }
-	100% { transform: translateY(0); }
-}
-
-#down_middle {
-	animation: hop 2s infinite both ease;
-    animation-delay: 2s;
-}
+@use 'animaton';
+@use 'colors';
+@use 'base';
