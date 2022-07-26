@@ -10,6 +10,7 @@ body {
   font-family: "Lato", sans-serif;
   background-color: #494947;
   padding: 10px 20px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -57,14 +58,6 @@ body {
   align-items: top;
 }
 
-.menu__logo {
-  height: 60px;
-}
-
-.menu {
-  width: auto;
-}
-
 .header__links {
   display: flex;
   gap: 10px;
@@ -74,14 +67,32 @@ body {
   fill: #bfacb5;
 }
 
+.menu {
+  width: auto;
+}
+
+.menu__header {
+  grid-column: 1/2;
+  color: #9fd4d2;
+  align-self: start;
+  margin: 0;
+}
+
+.menu__logo {
+  height: 60px;
+  grid-column: 2/3;
+}
+
 .menu__checkbox {
   position: absolute;
   left: -9999px;
-  /* display: none; */
 }
 
 .menu__toggler {
   cursor: pointer;
+  display: grid;
+  justify-items: auto;
+  gap: 10px;
 }
 
 .menu__list {
