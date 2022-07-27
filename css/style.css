@@ -73,7 +73,9 @@ body {
 
 .menu__links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 
 .menu__checkbox {
@@ -92,7 +94,7 @@ body {
 
 .menu__list {
   display: none;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   list-style: none;
   background-color: #494947;

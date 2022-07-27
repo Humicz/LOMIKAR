@@ -25,7 +25,8 @@
 
 .menu__links {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	column-gap: 5px;
 }
 
 // hamburger menu
@@ -47,7 +48,7 @@
 
 .menu__list {
 	display: none;
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 0;
 	list-style: none;
 	background-color: colors.$grey;
