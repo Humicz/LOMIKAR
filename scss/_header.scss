@@ -5,10 +5,12 @@
 .header {
     display: grid;
 	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid colors.$primary;
+	padding-bottom: 8px;
 }
 
 .header__logo {
-	max-height: 40px;
+	max-height: 50px;
 }
 
 .header__link {
@@ -43,7 +45,7 @@
 	justify-items: auto;
 	gap: 10px;
 	color: colors.$primary;
-	font-size: 26px;
+	font-size: 30px;
 }
 
 .menu__list {

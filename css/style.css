@@ -55,10 +55,12 @@ body {
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #9fd4d2;
+  padding-bottom: 8px;
 }
 
 .header__logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 .header__link {
@@ -89,7 +91,7 @@ body {
   justify-items: auto;
   gap: 10px;
   color: #9fd4d2;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .menu__list {
@@ -149,4 +151,18 @@ body {
   color: #9fd4d2;
   font-size: 10px;
   margin: 0;
+}
+
+.bio {
+  color: #bfacb5;
+  text-align: left;
+  margin: 0 30px;
+}
+
+.bio__subheading {
+  font-style: italic;
+}
+
+.bio__content {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

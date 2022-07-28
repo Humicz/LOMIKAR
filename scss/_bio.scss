@@ -1,0 +1,15 @@
+@use 'colors';
+
+.bio {
+    color: colors.$complementary;
+    text-align: left;
+    margin: 0 30px;
+}
+
+.bio__subheading {
+    font-style: italic;
+}
+
+.bio__content {
+    font-size: 14px;
+}
