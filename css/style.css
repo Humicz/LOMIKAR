@@ -167,7 +167,19 @@ body {
   font-size: 14px;
 }
 
+.gallery__header {
+  color: #9fd4d2;
+  text-align: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery__photopreview {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
