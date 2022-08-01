@@ -165,4 +165,9 @@ body {
 
 .bio__content {
   font-size: 14px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
 }/*# sourceMappingURL=style.css.map */
