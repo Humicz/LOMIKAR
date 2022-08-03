@@ -2,14 +2,17 @@ module.exports = function(eleventyConfig) {
 
 	// Výchozí výstupní složka: _site
 
-	// Zkopírovat images/ do _site/images
+	// Copies images/ do _site/images
 	eleventyConfig.addPassthroughCopy("images");
 
-	// Zkopírovat css/ to _site/css/
+	// Copies css/ to _site/css/
 	eleventyConfig.addPassthroughCopy("css");
 
+  // Copies js/ to _site/js/
+  eleventyConfig.addPassthroughCopy("js");
+
   return {
-    // možné formáty šablon
+    // avaliable formates of layouts
     templateFormats: ["njk", "html", "md", "liquid"],
 
     // jako šablonovací jazyk zvolíme Nunjucks

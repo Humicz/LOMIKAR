@@ -1,9 +1,13 @@
 @use 'colors';
 
+// gallery header
+
 .gallery__header {
     color: colors.$primary;
-    text-align: center;
+    text-align: left;
 }
+
+// gallery description setting and grid layout
 
 .gallery {
     display: grid;
@@ -52,6 +56,8 @@
 .photo__description a {
     color: white;
 }
+
+// photos hover animation
 
 .photo:hover .photo__description {
     transform: translateY(-100%);
