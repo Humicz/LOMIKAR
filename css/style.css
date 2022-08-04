@@ -57,6 +57,7 @@ body {
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #9fd4d2;
   padding-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .header__logo {
@@ -122,6 +123,10 @@ body {
 
 .menu__checkbox:checked ~ .menu__list {
   display: block;
+}
+
+.footer {
+  margin-top: 20px;
 }
 
 .footer__header {
