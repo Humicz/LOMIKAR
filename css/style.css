@@ -22,7 +22,36 @@ body {
   margin: 0 auto;
 }
 
-@-webkit-keyframes hop {
+@-webkit-keyframes blend {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes blend {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bump {
   0% {
     transform: translateY(0);
   }
@@ -33,8 +62,7 @@ body {
     transform: translateY(0);
   }
 }
-
-@keyframes hop {
+@keyframes bump {
   0% {
     transform: translateY(0);
   }
@@ -46,10 +74,53 @@ body {
   }
 }
 #down_middle {
-  -webkit-animation: hop 2s infinite both ease;
-          animation: hop 2s infinite both ease;
+  -webkit-animation: bump 2s 5s infinite both ease, blend 8s 0.5s both;
+          animation: bump 2s 5s infinite both ease, blend 8s 0.5s both;
+}
+
+#up_middle {
+  -webkit-animation: blend 8s;
+          animation: blend 8s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#down_left {
+  -webkit-animation: blend 8s;
+          animation: blend 8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#up_left {
+  -webkit-animation: blend 8s;
+          animation: blend 8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#down_right {
+  -webkit-animation: blend 8s;
+          animation: blend 8s;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#up_right {
+  -webkit-animation: blend 8s;
+          animation: blend 8s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .header {
