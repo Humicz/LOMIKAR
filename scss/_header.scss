@@ -50,7 +50,7 @@
 
 .menu__list {
 	max-height: 0px;
-  	overflow: hidden;
+  	overflow: hidden; // different checkbox hack principal - possible also with display:none and display:block when checkbox is checked
   	list-style: none;
   	transition: all 1s cubic-bezier(.325, 1, .22, 1);
 	// display: none;
@@ -76,15 +76,13 @@
 	color: colors.$complementary;
 	font-weight: bold;
 	text-transform: capitalize;
-	// transition: 0.25s;
 }
 
-.menu__checkbox:checked ~ .menu__list {
+.menu__checkbox:checked ~ .menu__list { // different checkbox hack principal - possible also with display:none and display:block when checkbox is checked
 	height: auto;
   	max-height: 20rem;
   	transition: all 1s cubic-bezier(.5, 1, .22, 1);
 	// display: block;
-	// transition: 10s;
 }
 
 // :hover properties of menu
