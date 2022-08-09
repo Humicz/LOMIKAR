@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -229,24 +230,6 @@ body {
   margin: 0;
 }
 
-.bio {
-  color: #bfacb5;
-  text-align: left;
-  margin: 0 30px;
-}
-
-.bio__subheading {
-  font-style: italic;
-}
-
-.bio__content {
-  font-size: 14px;
-}
-
-.bio__image {
-  width: 100%;
-}
-
 .gallery__header {
   color: #9fd4d2;
   text-align: left;
@@ -294,6 +277,7 @@ body {
 .photo__description p {
   margin: 0;
   color: white;
+  font-size: 14px;
 }
 
 .photo__description a {
@@ -308,6 +292,60 @@ body {
   transform: scale(1.1);
 }
 
+.bio {
+  color: #bfacb5;
+  text-align: left;
+  margin: 0 30px;
+}
+
+.bio__subheading {
+  font-style: italic;
+}
+
+.bio__content {
+  font-size: 14px;
+}
+
+.bio__image {
+  width: 100%;
+}
+
 .glide__image {
   width: 100%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "➕";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "➖";
 }/*# sourceMappingURL=style.css.map */
