@@ -243,6 +243,10 @@ body {
   font-size: 14px;
 }
 
+.bio__image {
+  width: 100%;
+}
+
 .gallery__header {
   color: #9fd4d2;
   text-align: left;
