@@ -2,41 +2,57 @@
 
 // Style the buttons that are used to open and close the accordion panel
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: colors.$grey;
+    color: colors.$primary;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    // border-bottom: 1px solid colors.$primary;
     outline: none;
     transition: 0.4s;
+    font-weight: bold;
+}
+
+// Style of the list
+
+.accordion__list {
+    font-size: 12px;
+}
+
+.accordion__item {
+
 }
   
 // Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: colors.$primary;
+    color: colors.$grey;
+    outline: none;
 }
   
 // Style the accordion panel. Note: hidden by default
 
 .accordion__panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: colors.$grey;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    color: colors.$complementary;
 }
 
 .accordion:after {
     content: '\02795'; // Unicode character for "plus" sign (+)
     font-size: 13px;
-    color: #777;
+    color: colors.$primary;
     float: right;
     margin-left: 5px;
+    // border: none;
   }
   
-  .active:after {
+.active:after {
     content: "\2796"; // Unicode character for "minus" sign (-)
+    color: colors.$primary;
   }

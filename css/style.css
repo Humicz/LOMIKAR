@@ -315,37 +315,45 @@ body {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #494947;
+  color: #9fd4d2;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   text-align: left;
-  border: none;
   outline: none;
   transition: 0.4s;
+  font-weight: bold;
+}
+
+.accordion__list {
+  font-size: 12px;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #9fd4d2;
+  color: #494947;
+  outline: none;
 }
 
 .accordion__panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #494947;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  color: #bfacb5;
 }
 
 .accordion:after {
   content: "➕";
   font-size: 13px;
-  color: #777;
+  color: #9fd4d2;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
   content: "➖";
+  color: #9fd4d2;
 }/*# sourceMappingURL=style.css.map */
