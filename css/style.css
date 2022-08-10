@@ -516,6 +516,9 @@ textarea.form-control {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
+.form__button:hover {
+  color: #494947;
+}
 .form__button:hover:before {
   transform: scaleX(1);
 }
