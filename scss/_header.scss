@@ -32,6 +32,10 @@
 	column-gap: 5px;
 }
 
+.menu__logo {
+	fill: colors.$complementary;
+}
+
 // hamburger menu
 
 .menu__checkbox {
@@ -75,7 +79,6 @@
 	text-decoration: none;
 	color: colors.$complementary;
 	font-weight: bold;
-	text-transform: capitalize;
 }
 
 .menu__checkbox:checked ~ .menu__list { // different checkbox hack principal - possible also with display:none and display:block when checkbox is checked
@@ -88,13 +91,13 @@
 // :hover properties of menu
 
 .menu__link:hover {
-	background-color: colors.$primary;
-	color: colors.$grey;
+	// background-color: colors.$primary;
+	color: colors.$primary;
 	transition: 0.2s; // not very visible, but makes :hover smoother
 }
 
 .menu__link:hover svg {
-	fill: colors.$grey;
+	fill: colors.$primary;
 	transition: 0.2s; // not very visible, but makes :hover smoother
 }
 

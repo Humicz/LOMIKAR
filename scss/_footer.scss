@@ -30,6 +30,14 @@
     margin-top: 10px;
 }
 
+.footer__logo {
+    fill: colors.$complementary;
+}
+
+.footer__logo:hover {
+    fill: colors.$primary;
+}
+
 // copyright
 
 .footer__copyright {
