@@ -38,6 +38,7 @@ textarea {
 	padding: 0 10px;
 	margin-bottom: 55px;
 	line-height: 1.8;
+    color: colors.$complementary;
 }
 
 .form__group {
@@ -47,7 +48,7 @@ textarea {
 
 	span {
 		font-size: 15px;
-		color: colors.$primary;
+		color: colors.$complementary;
 		position: absolute;
 		top: 11px;
 		transition: all .2s ease;
@@ -70,7 +71,7 @@ textarea {
 
 .form-control {
 	border: none;
-	border-bottom: 2px solid colors.$primary;
+	border-bottom: 2px solid colors.$complementary;
 	display: block;
 	width: 100%;
 	height: 43px;
@@ -78,6 +79,7 @@ textarea {
 	background: none;
 	&:focus, &:valid {
 		border-bottom: 2px solid colors.$primary;
+        color: colors.$primary;
 		& + span {
 			transform: translateY(-22px) scale(.8);
 			& + .border {
