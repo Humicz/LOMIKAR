@@ -168,7 +168,7 @@ body {
   color: #9fd4d2;
   font-size: 30px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 950px) {
   .menu__toggler {
     display: none;
   }
@@ -198,6 +198,7 @@ body {
     padding: 0;
     width: auto;
     margin-top: 0;
+    transition: none;
   }
 }
 
