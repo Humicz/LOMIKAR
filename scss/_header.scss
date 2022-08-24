@@ -40,7 +40,6 @@
 
 .menu__checkbox {
 	display: none;
-	// makes display: none;
 }
 
 .menu__toggler {
@@ -50,6 +49,10 @@
 	gap: 10px;
 	color: colors.$primary;
 	font-size: 30px;
+
+	@media screen and (min-width: 700px) {
+		display: none;
+	}
 }
 
 .menu__list {
@@ -67,10 +70,24 @@
     width: 100vw;
     z-index: 2;
 	opacity: 0.9;
+
+	@media screen and (min-width: 950px) {
+		max-height: 50px;
+		display: flex !important;
+		position: relative;
+		align-items: center;
+		padding: 0;
+		width: auto;
+		margin-top: 0;
+		}
 }
 
 .menu__item {
 	border-bottom: 1px solid colors.$primary;
+
+	@media screen and (min-width: 950px) {
+		border-bottom: none;
+	}
 }
 
 .menu__link {
@@ -79,6 +96,10 @@
 	text-decoration: none;
 	color: colors.$complementary;
 	font-weight: bold;
+
+	@media screen and (min-width: 950px) {
+		position: relative;
+	}
 }
 
 .menu__checkbox:checked ~ .menu__list { // different checkbox hack principal - possible also with display:none and display:block when checkbox is checked
@@ -101,20 +122,39 @@
 	transition: 0.2s; // not very visible, but makes :hover smoother
 }
 
-// Not working, because when activating the animation rolling down menu is sticked to toggler and animates with it. 
+// @media screen and (min-width: 950px) {
 
-// .menu:active {
-//     animation: rotate 1s;
-// }
+// 	.menu__link:after {
+// 		position: absolute;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		width: 0%;
+// 		content: '.';
+// 		color: transparent;
+// 		background: root.$color-accent;
+// 		height: 1px;
+// 	}
+	  
+// 	.menu__link:hover:after {
+// 		width: 100%;
+// 	}
 
-// @keyframes rotate{
-//     0%{
-//         transform: rotate(0deg);
-//     }
-//     50%{
-//         transform: rotate(90deg);
-//     }
-//     100%{
-//         transform: rotate(0deg);
-//     }
+// 	.menu__link {
+// 		  padding-bottom: 5px;
+// 	}
+
+// 	.menu__link:hover {
+// 		color: root.$color-primary;
+// 	}
+
+// 	.menu__link:active {
+// 		color: root.$color-primary;
+// 	}
+
+// 	.menu__item--active .menu__link {
+// 		border-bottom: 1px solid root.$color-accent;
+// 	}
+
 // }

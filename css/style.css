@@ -168,6 +168,11 @@ body {
   color: #9fd4d2;
   font-size: 30px;
 }
+@media screen and (min-width: 700px) {
+  .menu__toggler {
+    display: none;
+  }
+}
 
 .menu__list {
   max-height: 0px;
@@ -184,9 +189,25 @@ body {
   z-index: 2;
   opacity: 0.9;
 }
+@media screen and (min-width: 950px) {
+  .menu__list {
+    max-height: 50px;
+    display: flex !important;
+    position: relative;
+    align-items: center;
+    padding: 0;
+    width: auto;
+    margin-top: 0;
+  }
+}
 
 .menu__item {
   border-bottom: 1px solid #9fd4d2;
+}
+@media screen and (min-width: 950px) {
+  .menu__item {
+    border-bottom: none;
+  }
 }
 
 .menu__link {
@@ -195,6 +216,11 @@ body {
   text-decoration: none;
   color: #bfacb5;
   font-weight: bold;
+}
+@media screen and (min-width: 950px) {
+  .menu__link {
+    position: relative;
+  }
 }
 
 .menu__checkbox:checked ~ .menu__list {
