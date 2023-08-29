@@ -2,7 +2,7 @@
 @use 'gallery';
 
 .bio {
-    color: colors.$complementary;
+    color: colors.$primary;
     text-align: left;
     margin: 0 30px;
 }
@@ -13,6 +13,7 @@
 
 .bio__content {
     font-size: 14px;
+    color: colors.$complementary;
 }
 
 .bio__image {

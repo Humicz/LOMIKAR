@@ -22,21 +22,6 @@ body {
   margin: 0 auto;
 }
 
-@-webkit-keyframes blend {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
 @keyframes blend {
   0% {
     display: none;
@@ -51,17 +36,6 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes bump {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(25px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @keyframes bump {
   0% {
     transform: translateY(0);
@@ -74,53 +48,37 @@ body {
   }
 }
 #down_middle {
-  -webkit-animation: bump 2s 5s infinite both ease, blend 8s 0.5s both;
-          animation: bump 2s 5s infinite both ease, blend 8s 0.5s both;
+  animation: bump 2s 5s infinite both ease, blend 8s 0.5s both;
 }
 
 #up_middle {
-  -webkit-animation: blend 8s;
-          animation: blend 8s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: blend 8s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
 
 #down_left {
-  -webkit-animation: blend 8s;
-          animation: blend 8s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: blend 8s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 #up_left {
-  -webkit-animation: blend 8s;
-          animation: blend 8s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: blend 8s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 #down_right {
-  -webkit-animation: blend 8s;
-          animation: blend 8s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: blend 8s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 }
 
 #up_right {
-  -webkit-animation: blend 8s;
-          animation: blend 8s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: blend 8s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 }
 
 .header {
@@ -344,7 +302,7 @@ body {
 }
 
 .bio {
-  color: #bfacb5;
+  color: #9fd4d2;
   text-align: left;
   margin: 0 30px;
 }
@@ -355,6 +313,7 @@ body {
 
 .bio__content {
   font-size: 14px;
+  color: #bfacb5;
 }
 
 .bio__image {
